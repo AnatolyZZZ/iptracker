@@ -1,0 +1,8 @@
+.button {
+    background-color: black;
+    display: grid;
+    align-items: center;
+}
+.search {
+    display: flex;
+}
