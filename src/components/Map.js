@@ -13,7 +13,7 @@ export const Map = (props) => {
     const long = responce.location.lng;
     // console.log(lat)
     const [center, setCenter] = useState([lat, long]);
-    useEffect(()=>setCenter([...[lat+0.007, long]]),[lat, long])
+    useEffect(()=>setCenter([...[lat+0.007, long]]),JSON.stringify([lat, long]))
    
     const myIcon = new L.Icon({
         iconUrl: "./images/icon-location.svg",
