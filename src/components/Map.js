@@ -13,7 +13,7 @@ export const Map = (props) => {
     const long = responce.location.lng;
     // console.log(lat)
     const [center, setCenter] = useState([lat, long]);
-    useEffect(()=>setCenter([...[lat+0.007, long]]),JSON.stringify([lat, long]))
+    useEffect(()=>setCenter([...[lat+0.007, long]]),[JSON.stringify([lat, long])])
    
     const myIcon = new L.Icon({
         iconUrl: "./images/icon-location.svg",
@@ -27,8 +27,8 @@ export const Map = (props) => {
         return null;
       }
     
-    return <MapContainer center={center} zoom={13} scrollWheelZoom={false} id='map' >
-            <ChangeView center={center} zoom={13} /> 
+    return <MapContainer center={center} zoom={12} scrollWheelZoom={false} id='map' >
+            <ChangeView center={center} zoom={12} /> 
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
