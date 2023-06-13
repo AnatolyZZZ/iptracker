@@ -1,0 +1,36 @@
+{"as"
+: 
+{"asn": 6810, "name": "BEZEK", "route": "147.235.214.0/24", "domain": "bezeq.co.il", "type": "Cable/DSL/ISP"},
+"ip"
+: 
+"147.235.214.60",
+"isp"
+: 
+"Bezeq- THE ISRAEL TELECOMMUNICATION CORP. LTD.",
+"location"
+: 
+{"city"
+: 
+"Tel Aviv",
+"country"
+: 
+"IL",
+"geonameId"
+: 
+293397,
+"lat"
+: 
+32.08088,
+"lng"
+: 
+34.78057,
+"postalCode"
+: 
+"",
+"region"
+: 
+"Tel Aviv District",
+"timezone"
+: 
+"+03:00"
+}}

@@ -1,4 +1,23 @@
-/* header {
-    display: flex;
-    flex-direction: column;
-} */
+header {
+    background-image: url('../../public/images/pattern-bg-mobile.png');
+    text-align: center;
+    position: relative;
+    height: 40vh;
+    padding-top: 1.5em;
+}
+footer {
+    background-image: url('../../public/images/pattern-bg-mobile.png');
+    height: 5vh;
+}
+header h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    header, footer {
+        background-image: url('../../public/images/pattern-bg-desktop.png');   
+    }
+}

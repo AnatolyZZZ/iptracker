@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useContext, createContext } from 'react';
+import { useState,  createContext } from 'react';
 import { Header } from './components/Header';
 import { Map } from './components/Map';
 
@@ -27,12 +27,12 @@ const initialResp = {
 }
 
 export const RespContext = createContext(null);
-export const OkContext = createContext('ok');
+export const OkContext = createContext(true);
 export const SearchContext = createContext('');
 
 function App() {
   const [responce, setResponce] = useState(initialResp);
-  const [respOk, setRespOk] = useState('ok');
+  const [respOk, setRespOk] = useState(true);
   const [searchValue, setSearchValue] = useState ('');
  
 
@@ -42,6 +42,7 @@ function App() {
       <SearchContext.Provider value={{searchValue, setSearchValue}}>
         <Header/>
         <Map/>
+        <footer></footer>
       </SearchContext.Provider>
     </OkContext.Provider>
   </RespContext.Provider>
