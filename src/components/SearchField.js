@@ -45,7 +45,7 @@ export const SearchField = (props) => {
                 setResponce(_resp);
                 setRespOk(true);
             } else {
-                console.log(resp);
+                // console.log(resp);
                 setRespOk(false);
             }
         } catch {
@@ -69,8 +69,8 @@ export const SearchField = (props) => {
     
     useEffect (()=>{
         setRespOk(true);
-        setResponce(myHomeResp);
-        // fetchURL('https://geo.ipify.org/api/v2/country,city?apiKey=at_jo96G9wQpckf1WjCXACXhQSOcdEPb')
+        // setResponce(myHomeResp);
+        fetchURL('https://geo.ipify.org/api/v2/country,city?apiKey=at_jo96G9wQpckf1WjCXACXhQSOcdEPb')
     }, [])
 
 
